@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 16px;
+    padding-bottom: 80px; /* Mellanrum för navigationsmenyn så den inte hamnar i botten */
+}
+
+header {
+    margin-bottom: 24px;
+}
+
+header h1 {}
