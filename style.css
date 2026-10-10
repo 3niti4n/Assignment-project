@@ -45,3 +45,91 @@ section {
     color: #888888;
     text-transform: uppercase;
 }
+
+#today-workout h2 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+#today-workout p {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.timer-stats {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.btn-start {
+    width: 100%;
+    background-color: #ccff00;
+    color: #000000;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.week-overview {
+    background-color: #ccff00;
+    color: #000000;
+}
+
+.week-overview .card-header-row {
+    color: #333333;
+}
+
+.week-overview h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #000000;
+}
+
+.stapel-diagram {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 120px;
+    margin: 20px 0;
+    gap: 8px;
+}
+
+.stapel-torn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    justify-content: flex-end;
+    font-size: 11px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.stapel {
+    width: 100%;
+    background-color: #121212;
+    border-radius: 4px;
+    height: 60%;
+    margin-top: 6px;
+}
+
+.moment-visare {
+    font-size: 13px;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 16px;
+}
+
+.week-days ul {
+    list-style-type: none;
+}
