@@ -133,3 +133,33 @@ section {
 .week-days ul {
     list-style-type: none;
 }
+
+.week-days li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 4px solid black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.week-days li:last-child {
+    border-bottom: none;
+}
+
+.bottom-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.bottom-nav a {
+    color: #777777;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.bottom-nav a.active {
+    color: #ccff00;
+}
