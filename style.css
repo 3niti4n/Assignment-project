@@ -147,6 +147,116 @@ section {
     border-bottom: none;
 }
 
+.week-builder {
+    background-color: #1a1a1a;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.week-builder .card-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.week-builder .card-header-row span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #888888;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.week-builder .card-header-row a {
+    color: #ccff00;
+}
+
+.week-builder h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+.week-planning {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.day-card {
+    flex: 1;
+    min-width: 0;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 12px 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.date-name {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #777777;
+}
+
+.date-num {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: #000000;
+}
+
+.day-card .date-name {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #777777;
+}
+
+.day-card .date-num {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: #000000;
+}
+
+.day-card.active {
+    background-color: #121212;
+    border-color: #121212;
+}
+
+.day-card.active .date-name {
+    color: #ccff00;
+}
+
+.day-card.active .date-num {
+    color: #ffffff;
+}
+
+.week-planning .card-header-row a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.week-planning .card-header-row a:hover {
+    color: #ccff00;
+}
+
 .bottom-nav ul {
     display: flex;
     justify-content: space-around;
