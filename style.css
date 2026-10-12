@@ -273,3 +273,130 @@ section {
 .bottom-nav a.active {
     color: #ccff00;
 }
+
+footer section {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #e0e0e0;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 4px;
+    color: #000000;
+}
+
+.utmaning-text {
+    font-size: 13px;
+    color: #777777;
+    margin-bottom: 16px;
+}
+
+.img-excer img {
+    width: 40px;
+    height: 40px;
+}
+.utmaning-lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.utmaning-lista li {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 12px 16px;
+    gap: 12px;
+}
+
+.num, .num2, .num3 {
+    background-color: #ffffff;
+    color: #000000;
+    width: 32px;
+    height: 32px;
+    display; flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+}
+
+.num-detalj, .num2-detalj, .num-detalj3 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.num-detalj strong, .num2-detalj strong, .num3-detalj strong {
+    font-size: 14px;
+    color: #000000;
+}
+
+.num-detalj span, .num2-detalj span, .num3-detalj span {
+    font-size: 12px;
+    color: #777777;
+}
+
+.pil {
+    color: #777777;
+    font-size: 16px;
+}
+
+.pt-anteckning {
+    background-color: #ededed;
+    border: none;
+}
+
+.pt-anteckning .ettiket {
+    font-size: 11px;
+    font-weight: 700;
+    color: #777777;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.pt-anteckning p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    font-style: italic;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.pt-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pt-bild img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pt-bild strong {
+    font-size: 14px;
+    color: #000000;
+    display: block;
+}
+
+.pt-bild span {
+    font-size: 12px;
+    color: #777777;
+}
