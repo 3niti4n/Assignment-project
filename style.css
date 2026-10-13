@@ -17,11 +17,11 @@ main {
     grid-template-columns: 1fr;
     gap: 16px;
     grid-template-areas: 
-         "today"
-         "momentum"
-         "weekbuilder"
-         "exercises"
-         "notes";
+        "today"
+        "momentum"
+        "weekbuilder"
+        "exercises"
+        "notes";
 }
 
 header {
@@ -40,6 +40,14 @@ header h1 {
     font-size: 24px;
     font-weight: 800;
 }
+
+h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
 
 section {
     background-color: #1a1a1a;
@@ -165,7 +173,7 @@ section {
 }
 
 .week-builder {
-    grid-area: weekbuilder
+    grid-area: weekbuilder;
     background-color: #1a1a1a;
     border-radius: 16px;
     padding: 20px;
@@ -218,10 +226,8 @@ section {
     gap: 4px;
     cursor: pointer;
     transition: all 0.2s ease;
-
     font-family: inherit;
     appearance: none;
-    -webkit-appearance: none;
 }
 
 .date-name {
@@ -430,12 +436,190 @@ footer section {
     color: #777777;
 }
 
-@media (min-width: 900px) {
-    main {
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas: 
-            "today-momentum"
-            "weekbuilder weekbuilder"
-            "exercises notes";
+.sidomeny {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        padding: 0;
+        margin: 0;
+        background-color: #1a1a1a;
     }
+
+    #today-workout {
+        background-color: #121212;
+        color: #ffffff;
+    }
+    
+    #today-workout p {
+        color: #aaaaaa;
+    }
+
+    .week-builder {
+        background-color: #ffffff;
+        color: #121212;
+        border: 1px solid #e0e0e0;
+    }
+
+    week-builder h2 {
+        color: #121212;
+    }
+
+    .sidomeny {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #121212;
+        padding: 24px;
+        border-right: 1px solid #2a2a2a;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        width: 240px;
+    }
+
+    .main-content-wrapper {
+        padding: 32px;
+        background-color: #f4f4f0;
+        color: #121212;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .logotyp {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    .logotyp img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+    }
+
+    .logga-text {
+        font-size: 18px;
+        font-weight: 900;
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+
+    .sido-nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .sido-nav a {
+        display: block;
+        padding: 12px 16px;
+        color: #888888;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.2 ease;
+    }
+
+    .sido-nav a:hover {
+        color: #ffffff;
+        background-color: #1a1a1a;
+    }
+
+    .sido-nav a.active {
+        color: #ffffff;
+        background-color: #1a1a1a;
+        border-left: 3px solid #ccff00;
+    }
+
+    .sido-meny-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mål-vecka {
+        background-color: #1a1a1a;
+        padding: 16px;
+        border-radius: 12px;
+        border: 1px solid #2a2a2a;
+    }
+
+    .mål-titel {
+        font-size: 10px;
+        font-weight: 700;
+        color: #888888;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .mål-num {
+        font-size: 18px;
+        font-weight: 800;
+        color: #ffffff;
+        display: block;
+        margin-bottom: 10xp;
+    }
+
+    .mål-num small {
+        font-size: 12px;
+        color: #888888;
+        font-weight: 500;
+    }
+
+    .mål-streck {
+        width: 100%;
+        height: 6px;
+        background-color: #2a2a2a;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    .mål-progress {
+        width: 20%;
+        height: 100;
+        background-color: #ccff00;
+        border-radius: 3px;
+    }
+
+    .profil img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .profil strong {
+        font-size: 14px;
+        color: #ffffff;
+        display: block;
+    }
+
+    .profil a {
+        font-size: 12px;
+        color: #888888;
+        text-decoration: none;
+    }
+
+    .profil a:hover {
+        color: #ccff00;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 24px;
+        grid-template-areas: 
+            "today momentum"
+            "weekbuilder weekbuilder"
+            "exercises notes"
+    }
+
 }
