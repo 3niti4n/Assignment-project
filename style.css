@@ -12,6 +12,18 @@ body {
     padding-bottom: 80px; /* Mellanrum för navigationsmenyn så den inte hamnar i botten */
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    grid-template-areas: 
+         "today"
+         "momentum"
+         "weekbuilder"
+         "exercises"
+         "notes";
+}
+
 header {
     margin-bottom: 24px;
 }
@@ -44,6 +56,10 @@ section {
     font-size: 12px;
     color: #888888;
     text-transform: uppercase;
+}
+
+#today-workout { 
+    grid-area: today;
 }
 
 #today-workout h2 {
@@ -80,6 +96,7 @@ section {
 }
 
 .week-overview {
+    grid-area: momentum;
     background-color: #ccff00;
     color: #000000;
 }
@@ -148,6 +165,7 @@ section {
 }
 
 .week-builder {
+    grid-area: weekbuilder
     background-color: #1a1a1a;
     border-radius: 16px;
     padding: 20px;
@@ -200,6 +218,10 @@ section {
     gap: 4px;
     cursor: pointer;
     transition: all 0.2s ease;
+
+    font-family: inherit;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .date-name {
@@ -230,6 +252,10 @@ section {
     font-weight: 900;
     letter-spacing: -0.5px;
     color: #000000;
+}
+
+.day-card:active {
+    transform: scale(0.96);
 }
 
 .day-card.active {
@@ -275,6 +301,7 @@ section {
 }
 
 footer section {
+    grid-area: exercises;
     background-color: #ffffff;
     color: #000000;
     border-radius: 16px;
@@ -318,12 +345,12 @@ footer section {
     gap: 12px;
 }
 
-.num, .num2, .num3 {
+.num {
     background-color: #ffffff;
     color: #000000;
     width: 32px;
     height: 32px;
-    display; flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
@@ -332,20 +359,20 @@ footer section {
     border: 1px solid #e0e0e0;
 }
 
-.num-detalj, .num2-detalj, .num-detalj3 {
+.num-detalj {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
-.num-detalj strong, .num2-detalj strong, .num3-detalj strong {
-    font-size: 17px;
+.num-detalj strong {
+    font-size: 15px;
     color: #000000;
 }
 
-.num-detalj span, .num2-detalj span, .num3-detalj span {
-    font-size: 12px;
+.num-detalj span {
+    font-size: 15px;
     color: #777777;
 }
 
@@ -355,6 +382,7 @@ footer section {
 }
 
 .pt-anteckning {
+    grid-area: notes;
     background-color: #ededed;
     border: none;
 }
@@ -400,4 +428,14 @@ footer section {
 .pt-bild span {
     font-size: 12px;
     color: #777777;
+}
+
+@media (min-width: 900px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "today-momentum"
+            "weekbuilder weekbuilder"
+            "exercises notes";
+    }
 }
