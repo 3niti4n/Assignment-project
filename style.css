@@ -76,7 +76,18 @@ section {
     text-transform: uppercase;
 }
 
+.dagens-pass {
+    font-size: larger;
+    font-weight: bold;
+}
 
+.dagens {
+    font-size: larger;
+}
+
+.kropps.del {
+    font-size: larger;
+}
 
 #today-workout { 
     grid-area: today;
@@ -94,13 +105,21 @@ section {
     margin-bottom: 16px;
 }
 
-.timer-stats {
+.timer-kcal {
     display: flex;
+    flex-direction: column;
     gap: 16px;
     font-size: 13px;
     color: #cccccc;
     margin-bottom: 20px;
 }
+
+.timer-kcal span {
+    font-style: italic;
+    font-weight: bold;
+    font-size: larger;
+}
+ 
 
 .btn-start {
     width: 100%;
@@ -339,6 +358,25 @@ footer section {
     color: #ffffff;
 }
 
+.app-footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 12px;
+    color: #1a1a1a;
+}
+
+.app-footer a {
+    color: #888888;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.app-footer a:hover {
+    color: #ccff00;
+}
+
 .utmaning-text {
     font-size: 13px;
     color: #ffffff;
@@ -482,6 +520,10 @@ footer section {
 
     .week-builder h2 {
         color: #ffffff;
+    }
+
+    .week-builder a:hover {
+        color: #ccff00
     }
 
     .sidomeny {
