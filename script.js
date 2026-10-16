@@ -1,16 +1,24 @@
 document.addEventListener("DOMContentLoaded" ,  () => {
+    initCurrentDate();
+    initWorkoutTimer();
+    initDaySelector();
+});
+
+function initCurrentDate() {
     const dateElement = document.getElementById("current-date");
     if (dateElement) {
         const options = { weekday: 'long', day: 'numeric', month: 'long'};
         const today = new Date ();
         let formattedDate = today.toLocaleDateString('sv-SE', options);
-        formattedDate = today.toLocaleDateString('sv-SE', options);
         formattedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
         dateElement.textContent = formattedDate;
     }
+}
 
-const startButton = document.querySelector(".btn-start");
-const timerDisplay = document.getElementById("timer-stats");
+
+function initWorkoutTimer() {
+    const startButton = document.querySelector(".btn-start");
+    const timerDisplay = document.getElementById("timer-stats");
 
 if (startButton) {
     let isRunning = false;
@@ -50,6 +58,9 @@ if (startButton) {
         }
      });
    }
+}
+
+function initDaySelector() {
    const dayCards = document.querySelectorAll(".day-card");
 
    dayCards.forEach(card => {
@@ -58,4 +69,4 @@ if (startButton) {
         card.classList.add("active");
     });
   });
-});
+}
