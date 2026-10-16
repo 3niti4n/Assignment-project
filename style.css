@@ -300,7 +300,7 @@ section {
 
 .day-card.active {
     background-color: #121212;
-    border-color: #121212;
+    border-color: #1a1a1a;
 }
 
 .day-card.active .date-name {
@@ -343,7 +343,6 @@ section {
 footer section {
     grid-area: exercises;
     background-color: #1a1a1a;
-    color: #1a1a1a;
     border-radius: 16px;
     padding: 20px;
     margin-bottom: 16px;
